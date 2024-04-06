@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ele-mental</title>
+  <link rel="stylesheet" href="/app/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  
+  <div class="half-screen" id="top-half">
+    <container class="game-title">Ele-mental</container>
+    <div class="combatant">
+      <div class="element-display">
+        <h1 class="element-selection" id="enemey-element-selection"></h1>
+      </div>
+    </div>
+    
+    <div class="user">
+      <div class="element-display">
+        <h1 class="element-selection" id="enemey-element-selection"></h1>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="half-screen" id="bot-half">
+    
+    <container class="inputs">
+      
+      <div class="selections" id="fire">
+        
+        <div class="button">
+          <button class="element-selection" id="fire">FIRE</button>
+        </div>
+        <ul class="description">
+          <li class="beats-info">beats ice</li>
+          <li class="beats-info">beats wind</li>
+        </ul>
+      </div>
+      
+      <div class="selections" id="ice">
+        <div class="button">
+          <button class="element-selection" id="ice">ICE</button>
+        </div>
+        <ul class="description">
+          <li class="beats-info">beats wind</li>
+          <li class="beats-info">beats rock</li>
+        </ul>
+      </div>
+      
+      <div class="selections" id="wind">
+        <div class="button">
+          <button class="element-selection" id="wind">WIND</button>
+        </div>
+        <ul class="description">
+          <li class="beats-info">beats rock</li>
+          <li class="beats-info">beats shock</li>
+        </ul>
+      </div>
+      
+      <div class="selections" id="rock">
+        <div class="button">
+          <button class="element-selection" id="rock">ROCK</button>
+        </div>
+        <ul class="description">
+          <li class="beats-info">beats shock</li>
+          <li class="beats-info">beats fire</li>
+        </ul>
+      </div>
+      
+      <div class="selections" id="shock">
+        <div class="button">
+          <button class="element-selection" id="shock">SHOCK</button>
+        </div>
+        <ul class="description">
+          <li class="beats-info">beats fire</li>
+          <li class="beats-info">beats ice</li>
+        </ul>
+      </div>
+      
+
+    </container>
+
+  </div>
+
+</body>
+</html>
